@@ -18,7 +18,7 @@ For running above application go each and every app with terminal, follow comman
 // Each folder have dependancies, first install all
 $ npm install    
 // For back-end application you have to run 
-$ node server.js
+$ node app.js
 OR
 $ npm start
 ```
