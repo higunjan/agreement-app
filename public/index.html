@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Agreement Application</h2>
+    <div class="row">
+        <div class="form-group row">
+          <label class="control-label col-sm-2" for="name">Agreement Name:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="name" placeholder="Enter Agreement Name" name="Name">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="control-label col-sm-2" for="startDate">Start Date:</label>
+          <div class="col-sm-4">
+            <input type="text" class="startDate" placeholder="select date" id="datepicker">
+          </div>
+          <label class="control-label col-sm-2" for="endDate">End Date:</label>
+          <div class="col-sm-4">
+            <input type="text" class="endDate" placeholder="select date" id="datepicker1">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="control-label col-sm-2" for="name">Agreement Value:</label>
+          <div class="col-sm-10">
+            <input type="number" class="form-control" id="aValue" placeholder="Enter Agreement Value" name="Value">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="control-label col-sm-2" for="name">Agreement Status:</label>
+          <div class="col-sm-10">
+            <select id="status">
+              <option disabled="">Select Agreement Status</option>
+              <option value="Active">Active</option>
+              <option value="Renewed">Renewed</option>
+              <option value="Amended">Amended</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group row">        
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="button" id="submit" class="btn btn-default">Submit</button>
+            <button type="button" id="update" class="btn btn-default">Update</button>
+            <button type="button" id="cancel" class="btn btn-default">Cancel</button>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+  <div class="row">
+    <h2>Advance Search</h2>
+    <div class="col-sm-12">
+      <div class="col-sm-3">
+        <div class="input-group-btn btn-group">
+            <button type="button" class="btn dropdown-toggle fields" data-toggle="dropdown">
+                Fields <span class="caret"></span>
+            </button>
+            <ul id="demolist" class="dropdown-menu">
+                <li><a href="#">Name</a></li>
+                <li><a href="#">Start Date</a></li>
+                <li><a href="#">End Date</a></li>
+                <li><a href="#">Value</a></li>
+                <li><a href="#">Status</a></li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="input-group-btn btn-group">
+            <button type="button" class="btn dropdown-toggle operator" data-toggle="dropdown">
+                Operator <span class="caret"></span>
+            </button>
+            <ul id="demolist" class="dropdown-menu">
+                <li><a href="#">Equal To</a></li>
+                <li><a href="#">Not Equal To</a></li> 
+                <li><a href="#">Contains</a></li>
+                <li><a href="#">Greater than equal to</a></li>
+                <li><a href="#">Less than equal to</a></li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+          <input type="text" class="form-control" id="sValue" placeholder="Enter Value" name="Value">
+      </div>
+
+      <div class="col-sm-3">
+        <button type="button" id="search" class="btn btn-warning">Search</button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row">
+      <table id="example" class="display table" style="width:100%">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Agreement Name</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Agreement Value</th>
+                <th>Agreement Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

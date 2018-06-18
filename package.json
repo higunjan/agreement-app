@@ -1,0 +1,24 @@
+{
+  "name": "agreement-app",
+  "version": "1.0.0",
+  "description": "This application for entrance test purpose.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "NONE"
+  },
+  "keywords": [
+    "node",
+    "mongo"
+  ],
+  "author": "Gunjan Patel",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^4.12.0"
+  }
+}

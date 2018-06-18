@@ -1,0 +1,12 @@
+tfoot input {
+    width: 100%;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+#status {
+    background-color: aliceblue;
+    height: 35px;
+    width: 170px;
+    border-radius: 6px;
+}
